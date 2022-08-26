@@ -27,9 +27,8 @@ public class LinearSearch {
 
     private static void printResult(int elementIndex, int elementToSearch) {
         if (elementIndex == -1) {
-            logger.log(Level.WARNING, "Element not found");
+            logger.log(Level.INFO, "Element not found");
         } else if (elementIndex >= 0){
-            StringBuilder sb = new StringBuilder();
             logger.log(Level.INFO,"Element " + elementToSearch + " at position " + elementIndex );
         }
     }
