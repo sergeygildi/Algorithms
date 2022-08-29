@@ -8,7 +8,7 @@ public class CaesarCipher {
     private static final String ALPHABET = "абвгґдеєжзиіїйклмнопрстуфхцчшщьюя";
 
     public static void main(String[] args) {
-        logger.log(Level.INFO, encryption("абвгґд", 1));
+        logger.log(Level.INFO, encryption("абвгґд", 33));
     }
 
     private static String encryption(String text, int secretNumber) {
