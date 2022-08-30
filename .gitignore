@@ -1,12 +1,11 @@
-
 # IntelliJ project files
-.gitignore
-
-.idea
+*.idea
 *.iml
+*.xml
 gen
 .DS_Store
-.idea/
+.idea/*
+.idea
 out/
 
 ### Java template
@@ -33,3 +32,4 @@ out/
 
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
+/.idea/modules.xml
