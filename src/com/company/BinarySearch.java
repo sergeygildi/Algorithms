@@ -1,5 +1,6 @@
 package com.company;
 
+import java.util.Arrays;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
@@ -13,6 +14,8 @@ public class BinarySearch {
     }
 
     private static void binarySearch1(int[] array, int key) {
+        Arrays.sort(array);
+
         int first = 0;
         int last = array.length - 1;
         int mid = (first + last) / 2;
