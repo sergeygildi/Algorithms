@@ -1,11 +1,12 @@
 
 # IntelliJ project files
-/.idea/
-.idea
+*.idea
 *.iml
+*.xml
 gen
 .DS_Store
-.idea/
+.idea/*
+.idea
 out/
 
 ### Java template
