@@ -6,14 +6,14 @@ package com.company;
 public class LinearSearch {
     private static final int[] randomValues = {12, 425, 154, 56543, 467, 3467};
 
-    private static int searchElement(int[] array, int value) {
-        int foundNumber = 0;
+    private static int searchElement(int[] array, int element) {
+        int foundElement = 0;
         for (int i = 0; i < array.length; i++) {
-            if (array[i] == value) {
-                foundNumber = i;
+            if (array[i] == element) {
+                foundElement = i;
             }
         }
-        return foundNumber;
+        return foundElement;
     }
 
     private static void printResult(int elementIndex, int elementToSearch) {
