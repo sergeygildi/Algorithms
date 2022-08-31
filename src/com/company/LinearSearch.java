@@ -1,11 +1,10 @@
 package com.company;
 
-import java.util.logging.Level;
-import java.util.logging.Logger;
-
+/**
+ * An implementation of the linear search sorting algorithm.
+ */
 public class LinearSearch {
-    private static final int[] randomValues = {12,425,154,56543,467,3467};
-    static Logger logger = Logger.getLogger("SearchForANumberUsingLinearSearch.class");
+    private static final int[] randomValues = {12, 425, 154, 56543, 467, 3467};
 
     private static int searchElement(int[] array, int value) {
         int foundNumber = 0;
@@ -13,14 +12,15 @@ public class LinearSearch {
             if (array[i] == value) {
                 foundNumber = i;
             }
-        } return foundNumber;
+        }
+        return foundNumber;
     }
 
     private static void printResult(int elementIndex, int elementToSearch) {
         if (elementIndex >= 0) {
-            logger.log(Level.INFO,"Element " + elementToSearch + " at position " + elementIndex);
+            System.out.print("Element " + elementToSearch + " at position " + elementIndex);
         } else if (elementIndex == -1) {
-            logger.log(Level.INFO, "Element not found");
+            System.out.print("Element not found");
         }
     }
 

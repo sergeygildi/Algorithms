@@ -1,9 +1,12 @@
 package com.company;
 
-public class ReverseBubbleSort2 {
-    private static final int[] NUMBERS = {12,324,112,15,4,134,345,3,2,4,1,5,9};
+/**
+ * An implementation of the reverse bubble sorting algorithm.
+ */
+public class ReverseBubbleSort {
+    private static final int[] NUMBERS = {12, 324, 112, 15, 4, 134, 345, 3, 2, 4, 1, 5, 9};
 
-    private static int[] sortedArray(int[] numbers) {
+    private static void sortedArray(int[] numbers) {
         boolean isSorted = false;
         while (!isSorted) {
             isSorted = true;
@@ -19,7 +22,7 @@ public class ReverseBubbleSort2 {
                 }
             }
         }
-        return numbers;
+        print(numbers);
     }
 
     private static void print(int[] sortedArray) {
@@ -29,6 +32,6 @@ public class ReverseBubbleSort2 {
     }
 
     public static void main(String[] args) {
-        print(sortedArray(NUMBERS));
+        sortedArray(NUMBERS);
     }
 }
