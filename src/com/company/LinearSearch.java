@@ -4,32 +4,30 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 
 public class LinearSearch {
+    private static final int[] randomValues = {12,425,154,56543,467,3467};
+    static Logger logger = Logger.getLogger("SearchForANumberUsingLinearSearch.class");
 
-    static Logger logger = Logger.getLogger("LinearSearch.class");
-
-    private static int elementToSearch(int[] mass, int index) {
-        for (int i = 0; i < mass.length; i++){
-            if(mass[i] == index) {
-                return i;
+    private static int searchElement(int[] array, int value) {
+        int foundNumber = 0;
+        for (int i = 0; i < array.length; i++) {
+            if (array[i] == value) {
+                foundNumber = i;
             }
-        } return -1;
-    }
-
-    public static void main(String[] args) {
-
-        int numberToSearch = 12; // change this number
-        int[] randomValues = {12,425,154,56543,467,3467};
-
-        int element = elementToSearch(randomValues, numberToSearch);
-
-        printResult(element, numberToSearch);
+        } return foundNumber;
     }
 
     private static void printResult(int elementIndex, int elementToSearch) {
-        if (elementIndex == -1) {
+        if (elementIndex >= 0) {
+            logger.log(Level.INFO,"Element " + elementToSearch + " at position " + elementIndex);
+        } else if (elementIndex == -1) {
             logger.log(Level.INFO, "Element not found");
-        } else if (elementIndex >= 0){
-            logger.log(Level.INFO,"Element " + elementToSearch + " at position " + elementIndex );
         }
+    }
+
+    public static void main(String[] args) {
+        int numberToSearch = 12;
+        int element = searchElement(randomValues, numberToSearch);
+
+        printResult(element, numberToSearch);
     }
 }
