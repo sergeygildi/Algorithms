@@ -1,0 +1,520 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="BRANCH:main" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </select>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="dc37e4b4-08f3-4311-8af5-45e89b4b1abd" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml~6623cf8 (branch preparing for a merge)" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml~8532dad (Made changes into the code, including edits. Also implemented work with negative numbers)" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_26_08_2022,_12_07_[Default_Changelist]/shelved.patch" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_26_08_2022__12_07__Default_Changelist_.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_30_08_2022,_10_45_[Default_Changelist]/shelved.patch" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_30_08_2022__10_45__Default_Changelist_.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Algorithms/com/company/DecimalToBinary.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/company/CaesarCipher.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Algorithms.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Algorithms.iml" beforeDir="false" />
+    </list>
+    <list id="35c82811-ca8e-498f-bf06-0a65a533b3d9" name="I've implemented a linear search" comment="I've implemented a linear search">
+      <changelist_data name="”Serhii" email="sergeygildi@gmail.com" date="1661255314000" />
+    </list>
+    <list id="3243f843-68f6-4b79-a775-4991b81c28ec" name="Revert &quot;Cleaned directory&quot;" comment="Revert &quot;Cleaned directory&quot;&#10;&#10;This reverts commit 8b4096e9">
+      <changelist_data name="”Serhii" email="sergeygildi@gmail.com" date="1661850062000" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="REBASE" />
+  </component>
+  <component name="GitToolBoxStore">
+    <option name="projectConfigVersion" value="2" />
+    <option name="recentBranches">
+      <RecentBranches>
+        <option name="branchesForRepo">
+          <list>
+            <RecentBranchesForRepo>
+              <option name="branches">
+                <list>
+                  <RecentBranch>
+                    <option name="branchName" value="DecimalToBinary" />
+                    <option name="lastUsedInstant" value="1662031045" />
+                  </RecentBranch>
+                  <RecentBranch>
+                    <option name="branchName" value="main" />
+                    <option name="lastUsedInstant" value="1661964899" />
+                  </RecentBranch>
+                  <RecentBranch>
+                    <option name="branchName" value="QuickSort" />
+                    <option name="lastUsedInstant" value="1661964136" />
+                  </RecentBranch>
+                  <RecentBranch>
+                    <option name="branchName" value="BubbleSort" />
+                    <option name="lastUsedInstant" value="1661963124" />
+                  </RecentBranch>
+                  <RecentBranch>
+                    <option name="branchName" value="BinarySearch" />
+                    <option name="lastUsedInstant" value="1661926296" />
+                  </RecentBranch>
+                </list>
+              </option>
+              <option name="repositoryRootUrl" value="file://$PROJECT_DIR$" />
+            </RecentBranchesForRepo>
+          </list>
+        </option>
+      </RecentBranches>
+    </option>
+  </component>
+  <component name="ProjectId" id="2DkhQjx2R82bI3hO6LKKNQwT52l" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="SONARLINT_PRECOMMIT_ANALYSIS" value="true" />
+    <property name="add_unversioned_files" value="$PROJECT_DIR$/.gitignore" />
+    <property name="extract.method.default.visibility" value="private" />
+    <property name="ignore_missing_gitignore" value="true" />
+    <property name="jdk.selected.JAVA_MODULE" value="11" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/.idea" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.DecimalToBinary">
+    <configuration name="BinarySearch" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.company.BinarySearch" />
+      <module name="Algorithms" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.company.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BinarySearch" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.company.BinarySearch" />
+      <module name="Algorithms" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.company.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CaesarCipher" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.company.CaesarCipher" />
+      <module name="Algorithms" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.company.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DecimalToBinary" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.company.DecimalToBinary" />
+      <module name="Algorithms" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.company.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LinearSearch" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.company.LinearSearch" />
+      <module name="Algorithms" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.company.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="QuickSort" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.company.QuickSort" />
+      <module name="Algorithms" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.company.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.BinarySearch" />
+      <item itemvalue="Application.CaesarCipher" />
+      <item itemvalue="Application.DecimalToBinary" />
+      <item itemvalue="Application.LinearSearch" />
+      <item itemvalue="Application.QuickSort" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.DecimalToBinary" />
+        <item itemvalue="Application.QuickSort" />
+        <item itemvalue="Application.CaesarCipher" />
+        <item itemvalue="Application.BinarySearch" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="dc37e4b4-08f3-4311-8af5-45e89b4b1abd" name="Default Changelist" comment="" />
+      <created>1661248975592</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1661248975592</updated>
+    </task>
+    <task id="LOCAL-00001" summary="Revert &quot;Cleaned directory&quot;&#10;&#10;This reverts commit 8b4096e9">
+      <created>1661850062589</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1661850062589</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Revert &quot;Update .gitignore&quot;&#10;&#10;This reverts commit 63dc9c75">
+      <created>1661850073748</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1661850073748</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Revert &quot;Delete Algorithms.iml&quot;&#10;&#10;This reverts commit 0b51cce6">
+      <created>1661850080098</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1661850080098</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
+    <servers />
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ORDER">
+      <list>
+        <option value="0" />
+        <option value="2" />
+        <option value="3" />
+        <option value="1" />
+      </list>
+    </option>
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="1">
+          <value>
+            <State>
+              <option name="CUSTOM_BOOLEAN_PROPERTIES">
+                <map>
+                  <entry key="Show.Git.Branches" value="true" />
+                </map>
+              </option>
+              <option name="SHOW_ONLY_AFFECTED_CHANGES" value="true" />
+              <option name="FILTERS">
+                <map>
+                  <entry key="roots">
+                    <value>
+                      <list>
+                        <option value="$PROJECT_DIR$" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+        <entry key="2">
+          <value>
+            <State>
+              <option name="SHOW_ONLY_AFFECTED_CHANGES" value="true" />
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="HEAD" />
+                      </list>
+                    </value>
+                  </entry>
+                  <entry key="roots">
+                    <value>
+                      <list>
+                        <option value="$PROJECT_DIR$" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="OPEN_GENERIC_TABS">
+      <map>
+        <entry key="1" value="TOOL_WINDOW" />
+        <entry key="2" value="TOOL_WINDOW" />
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Revert &quot;Cleaned directory&quot;&#10;&#10;This reverts commit 8b4096e9" />
+    <MESSAGE value="Revert &quot;Update .gitignore&quot;&#10;&#10;This reverts commit 63dc9c75" />
+    <MESSAGE value="Revert &quot;Delete Algorithms.iml&quot;&#10;&#10;This reverts commit 0b51cce6" />
+    <option name="LAST_COMMIT_MESSAGE" value="Revert &quot;Delete Algorithms.iml&quot;&#10;&#10;This reverts commit 0b51cce6" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="-684" y="-1092" key="#Auto_Import" timestamp="1661929437480">
+      <screen x="-900" y="-1600" width="900" height="1600" />
+    </state>
+    <state x="-684" y="-1092" key="#Auto_Import/-900.-1600.900.1600/0.0.1440.900@-900.-1600.900.1600" timestamp="1661929437480" />
+    <state x="-563" y="-933" key="#Notifications" timestamp="1661872907881">
+      <screen x="-900" y="-1600" width="900" height="1600" />
+    </state>
+    <state x="-563" y="-933" key="#Notifications/-900.-1600.900.1600/0.0.1440.900@-900.-1600.900.1600" timestamp="1661872907881" />
+    <state x="320" y="95" key="#Plugins" timestamp="1661845435166">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="320" y="95" key="#Plugins/0.0.1440.900@0.0.1440.900" timestamp="1661845435166" />
+    <state x="208" y="28" key="#Project_Structure" timestamp="1661850640530">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="208" y="28" key="#Project_Structure/0.0.1440.900@0.0.1440.900" timestamp="1661850640530" />
+    <state x="449" y="256" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1661850659084">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="449" y="256" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1440.900@0.0.1440.900" timestamp="1661850659084" />
+    <state x="533" y="160" key="#com.intellij.ide.util.MemberChooser" timestamp="1661445919954">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="533" y="160" key="#com.intellij.ide.util.MemberChooser/0.0.1440.900@0.0.1440.900" timestamp="1661445919954" />
+    <state x="346" y="129" key="#com.intellij.openapi.keymap.impl.ui.EditKeymapsDialog" timestamp="1661851036752">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="346" y="129" key="#com.intellij.openapi.keymap.impl.ui.EditKeymapsDialog/0.0.1440.900@0.0.1440.900" timestamp="1661851036752" />
+    <state x="458" y="201" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1661848005536">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="458" y="201" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1440.900@0.0.1440.900" timestamp="1661848005536" />
+    <state x="469" y="309" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1661850462134">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="469" y="309" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1440.900@0.0.1440.900" timestamp="1661850462134" />
+    <state x="319" y="20" key="CommitChangelistDialog2" timestamp="1661850120584">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="319" y="20" key="CommitChangelistDialog2/0.0.1440.900@0.0.1440.900" timestamp="1661850120584" />
+    <state width="456" height="466" key="DebuggerActiveHint" timestamp="1661282096007">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="456" height="466" key="DebuggerActiveHint/0.0.1440.900@0.0.1440.900" timestamp="1661282096007" />
+    <state width="858" height="584" key="GridCell.Tab.0.bottom" timestamp="1662030070533">
+      <screen x="-900" y="-1600" width="900" height="1600" />
+    </state>
+    <state width="858" height="584" key="GridCell.Tab.0.bottom/-900.-1600.900.1600/0.0.1440.900@-900.-1600.900.1600" timestamp="1662030070533" />
+    <state width="858" height="584" key="GridCell.Tab.0.bottom/-900.-1600.900.1600/0.25.1440.875@-900.-1600.900.1600" timestamp="1661961658675" />
+    <state width="1398" height="377" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1661844479648" />
+    <state width="1398" height="268" key="GridCell.Tab.0.bottom/1440.0.1920.1080/0.0.1440.900@0.0.1440.900" timestamp="1661785035169" />
+    <state width="858" height="584" key="GridCell.Tab.0.center" timestamp="1662030070530">
+      <screen x="-900" y="-1600" width="900" height="1600" />
+    </state>
+    <state width="858" height="584" key="GridCell.Tab.0.center/-900.-1600.900.1600/0.0.1440.900@-900.-1600.900.1600" timestamp="1662030070530" />
+    <state width="858" height="584" key="GridCell.Tab.0.center/-900.-1600.900.1600/0.25.1440.875@-900.-1600.900.1600" timestamp="1661961658671" />
+    <state width="1398" height="377" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1661844479644" />
+    <state width="1398" height="268" key="GridCell.Tab.0.center/1440.0.1920.1080/0.0.1440.900@0.0.1440.900" timestamp="1661785035165" />
+    <state width="858" height="584" key="GridCell.Tab.0.left" timestamp="1662030070529">
+      <screen x="-900" y="-1600" width="900" height="1600" />
+    </state>
+    <state width="858" height="584" key="GridCell.Tab.0.left/-900.-1600.900.1600/0.0.1440.900@-900.-1600.900.1600" timestamp="1662030070529" />
+    <state width="858" height="584" key="GridCell.Tab.0.left/-900.-1600.900.1600/0.25.1440.875@-900.-1600.900.1600" timestamp="1661961658669" />
+    <state width="1398" height="377" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1661844479643" />
+    <state width="1398" height="268" key="GridCell.Tab.0.left/1440.0.1920.1080/0.0.1440.900@0.0.1440.900" timestamp="1661785035163" />
+    <state width="858" height="584" key="GridCell.Tab.0.right" timestamp="1662030070532">
+      <screen x="-900" y="-1600" width="900" height="1600" />
+    </state>
+    <state width="858" height="584" key="GridCell.Tab.0.right/-900.-1600.900.1600/0.0.1440.900@-900.-1600.900.1600" timestamp="1662030070532" />
+    <state width="858" height="584" key="GridCell.Tab.0.right/-900.-1600.900.1600/0.25.1440.875@-900.-1600.900.1600" timestamp="1661961658672" />
+    <state width="1398" height="377" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1661844479647" />
+    <state width="1398" height="268" key="GridCell.Tab.0.right/1440.0.1920.1080/0.0.1440.900@0.0.1440.900" timestamp="1661785035168" />
+    <state width="858" height="584" key="GridCell.Tab.1.bottom" timestamp="1662030070537">
+      <screen x="-900" y="-1600" width="900" height="1600" />
+    </state>
+    <state width="858" height="584" key="GridCell.Tab.1.bottom/-900.-1600.900.1600/0.0.1440.900@-900.-1600.900.1600" timestamp="1662030070537" />
+    <state width="858" height="584" key="GridCell.Tab.1.bottom/-900.-1600.900.1600/0.25.1440.875@-900.-1600.900.1600" timestamp="1661961658679" />
+    <state width="1398" height="377" key="GridCell.Tab.1.bottom/0.0.1440.900@0.0.1440.900" timestamp="1661844479651" />
+    <state width="1398" height="377" key="GridCell.Tab.1.bottom/1440.0.1920.1080/0.0.1440.900@0.0.1440.900" timestamp="1661784994809" />
+    <state width="858" height="584" key="GridCell.Tab.1.center" timestamp="1662030070535">
+      <screen x="-900" y="-1600" width="900" height="1600" />
+    </state>
+    <state width="858" height="584" key="GridCell.Tab.1.center/-900.-1600.900.1600/0.0.1440.900@-900.-1600.900.1600" timestamp="1662030070535" />
+    <state width="858" height="584" key="GridCell.Tab.1.center/-900.-1600.900.1600/0.25.1440.875@-900.-1600.900.1600" timestamp="1661961658677" />
+    <state width="1398" height="377" key="GridCell.Tab.1.center/0.0.1440.900@0.0.1440.900" timestamp="1661844479649" />
+    <state width="1398" height="377" key="GridCell.Tab.1.center/1440.0.1920.1080/0.0.1440.900@0.0.1440.900" timestamp="1661784994805" />
+    <state width="858" height="584" key="GridCell.Tab.1.left" timestamp="1662030070534">
+      <screen x="-900" y="-1600" width="900" height="1600" />
+    </state>
+    <state width="858" height="584" key="GridCell.Tab.1.left/-900.-1600.900.1600/0.0.1440.900@-900.-1600.900.1600" timestamp="1662030070534" />
+    <state width="858" height="584" key="GridCell.Tab.1.left/-900.-1600.900.1600/0.25.1440.875@-900.-1600.900.1600" timestamp="1661961658676" />
+    <state width="1398" height="377" key="GridCell.Tab.1.left/0.0.1440.900@0.0.1440.900" timestamp="1661844479648" />
+    <state width="1398" height="377" key="GridCell.Tab.1.left/1440.0.1920.1080/0.0.1440.900@0.0.1440.900" timestamp="1661784994803" />
+    <state width="858" height="584" key="GridCell.Tab.1.right" timestamp="1662030070536">
+      <screen x="-900" y="-1600" width="900" height="1600" />
+    </state>
+    <state width="858" height="584" key="GridCell.Tab.1.right/-900.-1600.900.1600/0.0.1440.900@-900.-1600.900.1600" timestamp="1662030070536" />
+    <state width="858" height="584" key="GridCell.Tab.1.right/-900.-1600.900.1600/0.25.1440.875@-900.-1600.900.1600" timestamp="1661961658678" />
+    <state width="1398" height="377" key="GridCell.Tab.1.right/0.0.1440.900@0.0.1440.900" timestamp="1661844479650" />
+    <state width="1398" height="377" key="GridCell.Tab.1.right/1440.0.1920.1080/0.0.1440.900@0.0.1440.900" timestamp="1661784994807" />
+    <state x="144" y="76" key="MergeDialog" timestamp="1661850041941">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="144" y="76" key="MergeDialog/0.0.1440.900@0.0.1440.900" timestamp="1661850041941" />
+    <state x="360" y="215" key="MultipleFileMergeDialog" timestamp="1661850117952">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="360" y="215" key="MultipleFileMergeDialog/0.0.1440.900@0.0.1440.900" timestamp="1661850117952" />
+    <state x="353" y="153" key="NewModule_or_Project.wizard" timestamp="1661845941160">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="353" y="153" key="NewModule_or_Project.wizard/0.0.1440.900@0.0.1440.900" timestamp="1661845941160" />
+    <state x="559" y="174" key="RollbackChangesDialog" timestamp="1661848635944">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="559" y="174" key="RollbackChangesDialog/0.0.1440.900@0.0.1440.900" timestamp="1661848635944" />
+    <state x="-900" y="-1550" key="SettingsEditor" timestamp="1662030144754">
+      <screen x="-900" y="-1600" width="900" height="1600" />
+    </state>
+    <state x="-900" y="-1550" key="SettingsEditor/-900.-1600.900.1600/0.0.1440.900@-900.-1600.900.1600" timestamp="1662030144754" />
+    <state x="-900" y="-1550" key="SettingsEditor/-900.-1600.900.1600/0.25.1440.875@-900.-1600.900.1600" timestamp="1662029362443" />
+    <state x="208" y="28" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1661849561837" />
+    <state x="100" y="100" width="1240" height="700" key="ShowDiffWithBranchDialog" timestamp="1661505797794">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="100" y="100" width="1240" height="700" key="ShowDiffWithBranchDialog/0.0.1440.900@0.0.1440.900" timestamp="1661505797794" />
+    <state x="-720" y="-1050" width="540" height="524" key="StructurePopup" timestamp="1661874504236">
+      <screen x="-900" y="-1600" width="900" height="1600" />
+    </state>
+    <state x="-720" y="-1050" width="540" height="524" key="StructurePopup/-900.-1600.900.1600/0.0.1440.900@-900.-1600.900.1600" timestamp="1661874504236" />
+    <state x="-800" y="-1268" key="Vcs.Push.Dialog.v2" timestamp="1662030257766">
+      <screen x="-900" y="-1600" width="900" height="1600" />
+    </state>
+    <state x="-800" y="-1268" key="Vcs.Push.Dialog.v2/-900.-1600.900.1600/0.0.1440.900@-900.-1600.900.1600" timestamp="1662030257766" />
+    <state x="320" y="187" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1661255437862" />
+    <state x="100" y="100" width="1240" height="700" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1661849174331">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="100" y="100" width="1240" height="700" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1440.900@0.0.1440.900" timestamp="1661849174331" />
+    <state x="516" y="353" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1661850772858">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="516" y="353" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1440.900@0.0.1440.900" timestamp="1661850772858" />
+    <state x="516" y="368" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.25.1440.875@0.25.1440.875" timestamp="1661443143939" />
+    <state x="-524" y="-1120" key="extract.method.dialog" timestamp="1662020967022">
+      <screen x="-900" y="-1600" width="900" height="1600" />
+    </state>
+    <state x="-524" y="-1120" key="extract.method.dialog/-900.-1600.900.1600/0.0.1440.900@-900.-1600.900.1600" timestamp="1662020967022" />
+    <state x="899" y="270" key="extract.method.dialog/0.0.1440.900@0.0.1440.900" timestamp="1661438379093" />
+    <state x="475" y="167" key="git4idea.branch.GitSmartOperationDialog" timestamp="1661504843701">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="475" y="167" key="git4idea.branch.GitSmartOperationDialog/0.0.1440.900@0.0.1440.900" timestamp="1661504843701" />
+    <state x="357" y="69" key="new project wizard" timestamp="1661849501307">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="357" y="69" key="new project wizard/0.0.1440.900@0.0.1440.900" timestamp="1661849501307" />
+    <state x="427" y="230" key="refactoring.ChangeSignatureDialog" timestamp="1661772647077">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="427" y="230" key="refactoring.ChangeSignatureDialog/1440.0.1920.1080/0.0.1440.900@0.0.1440.900" timestamp="1661772647077" />
+    <state x="385" y="210" key="run.anything.popup" timestamp="1661282839011">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="385" y="210" key="run.anything.popup/0.0.1440.900@0.0.1440.900" timestamp="1661282839011" />
+    <state x="-659" y="-1252" width="670" height="676" key="search.everywhere.popup" timestamp="1661927080956">
+      <screen x="-900" y="-1600" width="900" height="1600" />
+    </state>
+    <state x="-659" y="-1252" width="670" height="676" key="search.everywhere.popup/-900.-1600.900.1600/0.0.1440.900@-900.-1600.900.1600" timestamp="1661927080956" />
+    <state x="385" y="196" key="search.everywhere.popup/0.0.1440.900@0.0.1440.900" timestamp="1661849164641" />
+  </component>
+</project>
