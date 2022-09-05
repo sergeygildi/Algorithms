@@ -14,7 +14,7 @@ public class QuickSort {
     private static void quickSort(int[] numbers, int leftBorder, int rightBorder) {
         int leftMarker = leftBorder;
         int rightMarker = rightBorder;
-        int pivot = numbers[(leftMarker + rightMarker) >> 1];
+        int pivot = numbers[(leftMarker + rightMarker) / 2];
 
         do {
             while (numbers[leftMarker] < pivot) {
