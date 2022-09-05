@@ -2,17 +2,17 @@ package com.company;
 
 
 /**
- * An implementation Quick Search algorithm.
+ * An implementation Quick Sort algorithm.
  */
-public class QuickSearch {
+public class QuickSort {
     public static final int[] NUMBERS = {100, 29, 38, 47, 56, 65, 74, 38, 29, 1, 10};
 
     public static void main(String[] args) {
-        startQuickSearch(NUMBERS, 0, NUMBERS.length - 1);
+        startQuickSort(NUMBERS, 0, NUMBERS.length - 1);
         printResult(NUMBERS);
     }
 
-    private static void startQuickSearch(int[] numbers, int leftBorder, int rightBorder) {
+    private static void startQuickSort(int[] numbers, int leftBorder, int rightBorder) {
         int leftMarker = leftBorder;
         int rightMarker = rightBorder;
         int pivot = numbers[(leftMarker + rightMarker) >> 1];
@@ -36,10 +36,10 @@ public class QuickSearch {
         } while (leftMarker <= rightMarker);
 
         if (leftMarker < rightBorder) {
-            startQuickSearch(numbers, leftMarker, rightBorder);
+            startQuickSort(numbers, leftMarker, rightBorder);
         }
         if (leftBorder < rightMarker) {
-            startQuickSearch(numbers, leftBorder, rightMarker);
+            startQuickSort(numbers, leftBorder, rightMarker);
         }
     }
 
