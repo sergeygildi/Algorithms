@@ -13,7 +13,7 @@ public class HeapSort {
 
     private static void sort(int[] numbers) {
         final int size = numbers.length;
-        for (int i = (size >> 1) - 1; i >= 0; i--) {
+        for (int i = (size / 2) - 1; i >= 0; i--) {
             build(numbers, i, size);
         }
         for (int i = size - 1; i >= 0; i--) {
@@ -23,21 +23,21 @@ public class HeapSort {
     }
 
     private static void build(int[] numbers, int root, int size) {
-        int x = root;
-        int l = root * 2 + 1;
-        int r = l + 1;
+        int updRoot = root;
+        int left = root * 2 + 1;
+        int right = left + 1;
 
-        if (l < size && numbers[x] < numbers[l]) {
-            x = l;
+        if (left < size && numbers[updRoot] < numbers[left]) {
+            updRoot = left;
         }
-        if (r < size && numbers[x] < numbers[r]) {
-            x = r;
+        if (right < size && numbers[updRoot] < numbers[right]) {
+            updRoot = right;
         }
-        if (x == root) {
+        if (updRoot == root) {
             return;
         }
-        swap(numbers, x, root);
-        build(numbers, x, size);
+        swap(numbers, updRoot, root);
+        build(numbers, updRoot, size);
     }
 
     private static void swap(int[] numbers, int x, int y) {
@@ -51,4 +51,5 @@ public class HeapSort {
             System.out.print(number + " ");
         }
     }
+
 }
