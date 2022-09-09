@@ -1,17 +1,16 @@
 package com.company;
 
 /**
- * An implementation Quick Sort algorithm.
+ * An implementation QuickSort algorithm.
  */
 public class QuickSort {
-    public static final int[] NUMBERS = {100, 29, 38, 47, 56, 65, 74, 38, 29, 1, 10};
+    private static final int[] NUMBERS = {12, 324, 112, 15, 4, 134, 345, 3, 2, 4, 1, 5, 9};
 
-    public static void main(String[] args) {
-        quickSort(NUMBERS, 0, NUMBERS.length - 1);
-        printResult(NUMBERS);
+    public static void quickSort(int[] numbers) {
+        sort(numbers, 0, numbers.length - 1);
     }
 
-    private static void quickSort(int[] numbers, int leftBorder, int rightBorder) {
+    private static void sort(int[] numbers, int leftBorder, int rightBorder) {
         int leftMarker = leftBorder;
         int rightMarker = rightBorder;
         int pivot = numbers[(leftMarker + rightMarker) / 2];
@@ -20,11 +19,9 @@ public class QuickSort {
             while (numbers[leftMarker] < pivot) {
                 leftMarker++;
             }
-
             while (numbers[rightMarker] > pivot) {
                 rightMarker--;
             }
-
             if (leftMarker <= rightMarker) {
                 if (leftMarker < rightMarker) {
                     swap(numbers, leftMarker, rightMarker);
@@ -35,16 +32,10 @@ public class QuickSort {
         } while (leftMarker <= rightMarker);
 
         if (leftMarker < rightBorder) {
-            quickSort(numbers, leftMarker, rightBorder);
+            sort(numbers, leftMarker, rightBorder);
         }
         if (leftBorder < rightMarker) {
-            quickSort(numbers, leftBorder, rightMarker);
-        }
-    }
-
-    public static void printResult(int[] numbers) {
-        for (int number : numbers) {
-            System.out.print(number + " ");
+            sort(numbers, leftBorder, rightMarker);
         }
     }
 
@@ -53,4 +44,16 @@ public class QuickSort {
         numbers[x] = numbers[y];
         numbers[y] = temp;
     }
+
+    public static void printResult(int[] numbers) {
+        for (int number : numbers) {
+            System.out.print(number + " ");
+        }
+    }
+
+    public static void main(String[] args) {
+        quickSort(NUMBERS);
+        printResult(NUMBERS);
+    }
+
 }
