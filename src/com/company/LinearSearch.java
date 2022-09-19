@@ -30,4 +30,5 @@ public class LinearSearch {
 
         printResult(element, numberToSearch);
     }
+
 }
