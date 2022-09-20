@@ -1,7 +1,9 @@
-package com.company.HashMapImpl;
+package com.company;
 
+import java.io.PrintStream;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Objects;
 
 /**
  * An implementation of the HashMap.
@@ -9,15 +11,14 @@ import java.util.List;
  * @param <K> – the type of keys maintained by this map
  * @param <V> – the type of mapped values
  */
-public class HashMapImpl<K, V> implements HashMap<K, V> {
+public class HashMap<K, V> {
+    private static final double DEFAULT_LOADER = 0.75;
     private static int defaultLength = 16;
-    private static double defaultLoader = 0.75;
     private Entry<K, V>[] entries;
-    private int size = 0;
+    private int size;
 
-    @Override
-    public V put(K k, V v) {
-        if (size >= defaultLength * defaultLoader) {
+    public void put(K k, V v) {
+        if (size >= defaultLength * DEFAULT_LOADER) {
             expand();
         }
         int index = getIndex(k);
@@ -28,7 +29,6 @@ public class HashMapImpl<K, V> implements HashMap<K, V> {
             this.entries[index] = new Entry<>(k, v, null);
             size++;
         }
-        return this.entries[index].getValue();
     }
 
     private void expand() {
@@ -49,7 +49,6 @@ public class HashMapImpl<K, V> implements HashMap<K, V> {
         if (!list.isEmpty()) {
             size = 0;
             defaultLength *= 2;
-
             for (Entry<K, V> entry : list) {
                 if (entry.next != null) {
                     entry.next = null;
@@ -68,7 +67,6 @@ public class HashMapImpl<K, V> implements HashMap<K, V> {
         }
     }
 
-    @Override
     public V get(K k) {
         int index = getIndex(k);
         if (entries[index] == null) {
@@ -88,15 +86,14 @@ public class HashMapImpl<K, V> implements HashMap<K, V> {
         return entry.getValue();
     }
 
-    @Override
     public int size() {
         return this.size;
     }
 
-    static class Entry<K, V> implements HashMap.Entry<K, V> {
-        K k;
-        V v;
-        Entry<K, V> next;
+    static class Entry<K, V> {
+        private final K k;
+        private final V v;
+        private Entry<K, V> next;
 
         public Entry(K k, V v, Entry next) {
             this.k = k;
@@ -104,47 +101,52 @@ public class HashMapImpl<K, V> implements HashMap<K, V> {
             this.next = next;
         }
 
-        @Override
         public K getKey() {
             return k;
         }
 
-        @Override
         public V getValue() {
             return v;
         }
+
+        @Override
+        public boolean equals(Object o) {
+            if (this == o) return true;
+            if (o == null || getClass() != o.getClass()) return false;
+            Entry<?, ?> entry = (Entry<?, ?>) o;
+            return Objects.equals(k, entry.k) && Objects.equals(v, entry.v) && Objects.equals(next, entry.next);
+        }
+
+        @Override
+        public int hashCode() {
+            return Objects.hash(k, v, next);
+        }
     }
 
-    public HashMapImpl(int length, double loader) {
-        defaultLength = length;
-        defaultLoader = loader;
+    public HashMap() {
         entries = new Entry[defaultLength];
     }
 
-    public HashMapImpl() {
-        this(defaultLength, defaultLoader);
-    }
-
     private int getIndex(K k) {
-        int m = defaultLength;
-        int index = k.hashCode() % m;
+        int index = k.hashCode() % defaultLength;
         return index >= 0 ? index : -index;
     }
 
     public static void main(String[] args) {
-        HashMapImpl<Integer, String> hashMap = new HashMapImpl<>();
+        HashMap<Integer, String> hashMap = new HashMap<>();
         hashMap.put(10, "Apple");
         hashMap.put(1, "Orange");
         hashMap.put(79, "Grape");
 
-        System.out.println("Size of Map: " + hashMap.size());
+        PrintStream out = System.out;
+        out.println("Size of Map: " + hashMap.size());
 
-        System.out.println("Value at 79 " + hashMap.get(79));
-        System.out.println("Value at 1 " + hashMap.get(1));
-        System.out.println("Value at 10 " + hashMap.get(10));
+        out.println("Value at 79 " + hashMap.get(79));
+        out.println("Value at 1 " + hashMap.get(1));
+        out.println("Value at 10 " + hashMap.get(10));
 
         hashMap.put(10, null);
-        System.out.println("Value at 10 " + hashMap.get(10));
+        out.println("Value at 10 " + hashMap.get(10));
     }
 
 }
