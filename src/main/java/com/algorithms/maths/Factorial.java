@@ -16,6 +16,9 @@ public class Factorial {
      * @return BigInteger
      */
     public static BigInteger getFactorial(String targetNumberString) {
+        if (Integer.parseInt(targetNumberString) < 0) {
+            throw new IllegalArgumentException("number is negative");
+        }
         BigInteger target = new BigInteger(targetNumberString).abs();
         if (!target.equals(BigInteger.ZERO)) {
             BigInteger factorial = target;
@@ -26,11 +29,6 @@ public class Factorial {
             return factorial;
         }
         return BigInteger.ONE;
-    }
-
-    public static void main(String[] args) {
-        getFactorial("4");
-        getFactorial("-4");
     }
 
 }
