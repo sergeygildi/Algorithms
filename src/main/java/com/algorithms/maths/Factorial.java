@@ -1,5 +1,7 @@
 package com.algorithms.maths;
 
+import com.algorithms.utils.exceptions.NumberIsNegativeException;
+
 import java.math.BigInteger;
 
 /**
@@ -17,7 +19,7 @@ public class Factorial {
      */
     public static BigInteger getFactorial(String targetNumberString) {
         if (Integer.parseInt(targetNumberString) < 0) {
-            throw new IllegalArgumentException("number is negative");
+            throw new NumberIsNegativeException();
         }
         BigInteger target = new BigInteger(targetNumberString).abs();
         if (!target.equals(BigInteger.ZERO)) {

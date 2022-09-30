@@ -1,11 +1,14 @@
 package com.algorithms.sorts;
 
+import com.algorithms.utils.checks.Checks;
+
 /**
  * An implementation of the HeapSort algorithm.
  */
 public class HeapSort {
 
     public int[] sort(int[] numbers) {
+        Checks.throwExceptionIfArrayEmpty(numbers);
         return getSortedArray(numbers);
     }
 

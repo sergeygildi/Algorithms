@@ -1,11 +1,18 @@
 package com.algorithms.sorts;
 
+import com.algorithms.utils.checks.Checks;
+
 /**
  * An implementation QuickSort algorithm.
  */
 public class QuickSort {
 
-    public int[] quickSort(int[] numbers) {
+    public int[] sort(int[] numbers) {
+        Checks.throwExceptionIfArrayEmpty(numbers);
+        return getSortedArray(numbers);
+    }
+
+    private static int[] getSortedArray(int[] numbers) {
         if (numbers.length == 0) {
             throw new ArrayIndexOutOfBoundsException();
         }

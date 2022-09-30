@@ -1,5 +1,6 @@
 package com.algorithms.maths;
 
+import com.algorithms.utils.exceptions.NumberIsNegativeException;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.ValueSource;
@@ -32,7 +33,7 @@ class FactorialTest {
     @DisplayName("Should throw IllegalArgumentException if passed arguments are negative numbers")
     @ValueSource(strings = {"-1", "-2", "-3", "-4", "-5"})
     void shouldThrowExceptionIfArgsIsNegativeNumber(String negativeNumbers) {
-        assertThrows(IllegalArgumentException.class,
+        assertThrows(NumberIsNegativeException.class,
                 () -> Factorial.getFactorial(negativeNumbers),
                 "Number is negative");
     }

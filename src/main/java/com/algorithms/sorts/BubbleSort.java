@@ -1,11 +1,18 @@
 package com.algorithms.sorts;
 
+import com.algorithms.utils.checks.Checks;
+
 /**
  * An implementation of the bubble sorting algorithm.
  */
 public class BubbleSort {
 
-    public int[] bubbleSort(int[] numbers) {
+    public int[] sort(int[] numbers) {
+        Checks.throwExceptionIfArrayEmpty(numbers);
+        return getSortedArray(numbers);
+    }
+
+    private static int[] getSortedArray(int[] numbers) {
         boolean isSorted = false;
         while (!isSorted) {
             isSorted = true;
