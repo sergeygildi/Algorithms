@@ -5,9 +5,7 @@ package com.algorithms.sorts;
  */
 public class BubbleSort {
 
-    private static final int[] NUMBERS = {12, 324, 112, 15, 4, 134, 345, 3, 2, 4, 1, 5, 9};
-
-    private static void bubbleSort(int[] numbers) {
+    public int[] bubbleSort(int[] numbers) {
         boolean isSorted = false;
         while (!isSorted) {
             isSorted = true;
@@ -22,16 +20,6 @@ public class BubbleSort {
                 }
             }
         }
-        print(numbers);
-    }
-
-    private static void print(int[] bubbleSort) {
-        for (int value : bubbleSort) {
-            System.out.print(value + " ");
-        }
-    }
-
-    public static void main(String[] args) {
-        bubbleSort(NUMBERS);
+        return numbers;
     }
 }
