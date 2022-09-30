@@ -4,13 +4,15 @@ package com.algorithms.sorts;
  * An implementation QuickSort algorithm.
  */
 public class QuickSort {
-    private static final int[] NUMBERS = {12, 324, 112, 15, 4, 134, 345, 3, 2, 4, 1, 5, 9};
 
-    public static void quickSort(int[] numbers) {
-        sort(numbers, 0, numbers.length - 1);
+    public int[] quickSort(int[] numbers) {
+        if (numbers.length == 0) {
+            throw new ArrayIndexOutOfBoundsException();
+        }
+        return sort(numbers, 0, numbers.length - 1);
     }
 
-    private static void sort(int[] numbers, int leftBorder, int rightBorder) {
+    private static int[] sort(int[] numbers, int leftBorder, int rightBorder) {
         int leftMarker = leftBorder;
         int rightMarker = rightBorder;
         int pivot = numbers[(leftMarker + rightMarker) / 2];
@@ -37,23 +39,13 @@ public class QuickSort {
         if (leftBorder < rightMarker) {
             sort(numbers, leftBorder, rightMarker);
         }
+        return numbers;
     }
 
     private static void swap(int[] numbers, int x, int y) {
         int temp = numbers[x];
         numbers[x] = numbers[y];
         numbers[y] = temp;
-    }
-
-    public static void printResult(int[] numbers) {
-        for (int number : numbers) {
-            System.out.print(number + " ");
-        }
-    }
-
-    public static void main(String[] args) {
-        quickSort(NUMBERS);
-        printResult(NUMBERS);
     }
 
 }
