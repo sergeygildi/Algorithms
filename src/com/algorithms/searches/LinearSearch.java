@@ -1,4 +1,4 @@
-package com.company;
+package com.algorithms.searches;
 
 /**
  * An implementation of the linear search sorting algorithm.

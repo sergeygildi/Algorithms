@@ -1,4 +1,4 @@
-package com.company;
+package com.algorithms.searches;
 
 import java.util.Arrays;
 
