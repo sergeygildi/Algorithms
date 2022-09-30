@@ -1,34 +1,29 @@
 package com.algorithms.searches;
 
+import com.algorithms.utils.checks.Checks;
+import com.algorithms.utils.exceptions.NumberNotFoundException;
+
 /**
  * An implementation of the linear search sorting algorithm.
  */
 public class LinearSearch {
-    private static final int[] randomValues = {12, 425, 154, 56543, 467, 3467};
 
-    private static int searchElement(int[] array, int element) {
-        int foundElement = 0;
+    public int search(int[] numbers, int element) {
+        Checks.throwExceptionIfArrayEmpty(numbers);
+        return getFoundElement(numbers, element);
+    }
+
+    private static int getFoundElement(int[] array, int element) {
+        int foundElementIndex = -1;
         for (int i = 0; i < array.length; i++) {
             if (array[i] == element) {
-                foundElement = i;
+                foundElementIndex = i;
             }
         }
-        return foundElement;
-    }
-
-    private static void printResult(int elementIndex, int elementToSearch) {
-        if (elementIndex >= 0) {
-            System.out.print("Element " + elementToSearch + " at position " + elementIndex);
-        } else if (elementIndex == -1) {
-            System.out.print("Element not found");
+        if (foundElementIndex == -1) {
+            throw new NumberNotFoundException();
         }
-    }
-
-    public static void main(String[] args) {
-        int numberToSearch = 12;
-        int element = searchElement(randomValues, numberToSearch);
-
-        printResult(element, numberToSearch);
+        return foundElementIndex;
     }
 
 }

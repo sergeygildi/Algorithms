@@ -1,30 +1,34 @@
 package com.algorithms.searches;
 
+import com.algorithms.utils.checks.Checks;
+import com.algorithms.utils.exceptions.NumberNotFoundException;
+
 import java.util.Arrays;
 
 /**
  * An implementation of the BinarySearch algorithm.
  */
 public class BinarySearch {
-    public static final int[] NUMBERS = {30, 11, 22, 43, 54, 65, 76, 87, 98, 9, -10};
 
-    public static void main(String[] args) {
-        binarySearch(NUMBERS, 3);
+    public int search(int[] numbers, int key) {
+        Checks.throwExceptionIfArrayEmpty(numbers);
+        return getFoundNumberIndex(numbers, key);
     }
 
-    private static void binarySearch(int[] numbers, int elementToBeFound) {
+    private int getFoundNumberIndex(int[] numbers, int key) {
         Arrays.sort(numbers);
 
         int left = 0;
         int right = numbers.length - 1;
         int pivot = (left + right) / 2;
+        int foundNumber = -1;
 
         while (left <= right) {
-            if (elementToBeFound == numbers[pivot]) {
-                System.out.printf("%s found at location %s", elementToBeFound, pivot);
+            if (key == numbers[pivot]) {
+                foundNumber = pivot;
                 break;
             }
-            if (numbers[pivot] < elementToBeFound) {
+            if (numbers[pivot] < key) {
                 left = pivot + 1;
             } else {
                 right = pivot - 1;
@@ -32,9 +36,10 @@ public class BinarySearch {
             pivot = (left + right) / 2;
         }
 
-        if (left > right) {
-            System.out.printf("%d is not present in the list.%s",
-                    elementToBeFound, System.lineSeparator());
+        if (foundNumber == -1) {
+            throw new NumberNotFoundException();
         }
+
+        return foundNumber;
     }
 }
