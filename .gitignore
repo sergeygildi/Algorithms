@@ -1,6 +1,7 @@
 # IntelliJ project files
 *.idea
 *.iml
+!/pom.xml
 *.xml
 gen
 .DS_Store
