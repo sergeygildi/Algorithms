@@ -4,14 +4,12 @@ package com.algorithms.sorts;
  * An implementation of the HeapSort algorithm.
  */
 public class HeapSort {
-    private static final int[] NUMBERS = {23, 445, 776, 213, 865, 234, 67, 3};
 
-    public static void main(String[] args) {
-        sort(NUMBERS);
-        printResult(NUMBERS);
+    public int[] sort(int[] numbers) {
+        return getSortedArray(numbers);
     }
 
-    private static void sort(int[] numbers) {
+    private static int[] getSortedArray(int[] numbers) {
         final int size = numbers.length;
         for (int i = (size / 2) - 1; i >= 0; i--) {
             build(numbers, i, size);
@@ -20,6 +18,7 @@ public class HeapSort {
             swap(numbers, 0, i);
             build(numbers, 0, i);
         }
+        return numbers;
     }
 
     private static void build(int[] numbers, int root, int size) {
@@ -44,12 +43,6 @@ public class HeapSort {
         int temp = numbers[x];
         numbers[x] = numbers[y];
         numbers[y] = temp;
-    }
-
-    private static void printResult(int[] numbers) {
-        for (int number : numbers) {
-            System.out.print(number + " ");
-        }
     }
 
 }
