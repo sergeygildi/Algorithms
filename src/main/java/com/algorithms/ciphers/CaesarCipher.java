@@ -1,19 +1,25 @@
 package com.algorithms.ciphers;
 
+import com.algorithms.utils.checks.Checks;
+
 /**
  * An implementation of the Caesar cipher algorithm.
  */
 public class CaesarCipher {
+
     private static final String ALPHABET = "абвгґдеєжзиіїйклмнопрстуфхцчшщьюя";
 
-    public static void main(String[] args) {
-        System.out.print(encrypt("абвгґд", 1));
+    public String encrypt(String text, int secretNumber) {
+        Checks.throwExceptionIfParamIsEmptyOrNull(text);
+        Checks.throwExceptionIfParamIsEmptyOrNull(secretNumber);
+        return getEncryptString(text, secretNumber);
     }
 
-    private static String encrypt(String text, int secretNumber) {
+    private String getEncryptString(String text, int secretNumber) {
         if (!text.isEmpty()) {
             StringBuilder sb = new StringBuilder();
-            for (int i = 0; i < text.toLowerCase().length(); i++) {
+            String lowerText = text.toLowerCase();
+            for (int i = 0; i < lowerText.length(); i++) {
                 char shift = shift(text.charAt(i), secretNumber);
                 sb.append(shift);
             }
