@@ -1,4 +1,4 @@
-package com.company;
+package com.algorithms.ciphers;
 
 /**
  * An implementation of the Caesar cipher algorithm.

@@ -1,4 +1,4 @@
-package com.company;
+package com.algorithms.maths;
 
 import java.math.BigInteger;
 

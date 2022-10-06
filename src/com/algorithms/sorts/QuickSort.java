@@ -1,4 +1,4 @@
-package com.company;
+package com.algorithms.sorts;
 
 /**
  * An implementation QuickSort algorithm.

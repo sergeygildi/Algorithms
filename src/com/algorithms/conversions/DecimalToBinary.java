@@ -1,4 +1,4 @@
-package com.company;
+package com.algorithms.conversions;
 
 /**
  * An implementation of the algorithm that converts a number from decimal to binary
