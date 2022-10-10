@@ -21,5 +21,4 @@ public class DecimalToBinary {
         }
         return sb.reverse().toString();
     }
-
 }

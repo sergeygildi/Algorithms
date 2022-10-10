@@ -3,11 +3,13 @@ package com.algorithms.ciphers;
 
 import com.algorithms.utils.exceptions.ParamIsNullException;
 import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 
+@DisplayName("CaesarCipher should")
 class CaesarCipherTest {
 
     private CaesarCipher caesarCipher;
@@ -18,27 +20,31 @@ class CaesarCipherTest {
     }
 
     @Test
+    @DisplayName("work correct")
     void shouldWorkCorrect() {
-        String actual = caesarCipher.encrypt("абвгд", 1);
+        String actual = caesarCipher.getEncryptString("абвгд", 1);
         assertEquals("бвгґе", actual);
     }
 
     @Test
-    void shouldThrowParamIsNullExceptionIfTextIsBlank() {
+    @DisplayName("throw an exception if the input is blank")
+    void blankInput() {
         assertThrows(ParamIsNullException.class,
-                () -> caesarCipher.encrypt("", 1));
+                () -> caesarCipher.getEncryptString("", 1));
     }
 
     @Test
-    void shouldThrowParamIsNullExceptionIfTextIsNull() {
+    @DisplayName("throw an exception if the text input is null")
+    void nullTextInput() {
         assertThrows(ParamIsNullException.class,
-                () -> caesarCipher.encrypt(null, 1));
+                () -> caesarCipher.getEncryptString(null, 1));
     }
 
     @Test
-    void shouldThrowParamIsNullExceptionIfSecretNumberIsNull() {
+    @DisplayName("throw an exception if the secret number input is null")
+    void nullSecretNumberInput() {
         assertThrows(ParamIsNullException.class,
-                () -> caesarCipher.encrypt("asd", 0));
+                () -> caesarCipher.getEncryptString("asd", 0));
     }
 
 }

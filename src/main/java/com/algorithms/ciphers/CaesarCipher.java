@@ -9,13 +9,13 @@ public class CaesarCipher {
 
     private static final String ALPHABET = "абвгґдеєжзиіїйклмнопрстуфхцчшщьюя";
 
-    public String encrypt(String text, int secretNumber) {
+    public String getEncryptString(String text, int secretNumber) {
         Checks.throwExceptionIfParamIsEmptyOrNull(text);
         Checks.throwExceptionIfParamIsEmptyOrNull(secretNumber);
-        return getEncryptString(text, secretNumber);
+        return encrypt(text, secretNumber);
     }
 
-    private String getEncryptString(String text, int secretNumber) {
+    private String encrypt(String text, int secretNumber) {
         if (!text.isEmpty()) {
             StringBuilder sb = new StringBuilder();
             String lowerText = text.toLowerCase();

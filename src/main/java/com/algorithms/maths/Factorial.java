@@ -19,7 +19,7 @@ public class Factorial {
      */
     public static BigInteger getFactorial(String targetNumberString) {
         if (Integer.parseInt(targetNumberString) < 0) {
-            throw new NumberIsNegativeException();
+            throw new IllegalArgumentException();
         }
         BigInteger target = new BigInteger(targetNumberString).abs();
         if (!target.equals(BigInteger.ZERO)) {

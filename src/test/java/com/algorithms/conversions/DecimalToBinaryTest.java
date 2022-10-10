@@ -1,43 +1,49 @@
 package com.algorithms.conversions;
 
-
 import com.algorithms.utils.exceptions.ParamIsNullException;
-import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 
+@DisplayName("DecimalToBinary should")
 class DecimalToBinaryTest {
 
-    private DecimalToBinary decimalToBinary;
+    private static DecimalToBinary decimalToBinary;
 
-    @BeforeEach
-    void setUp() {
+    @BeforeAll
+    static void setUp() {
         decimalToBinary = new DecimalToBinary();
     }
 
     @Test
-    void shouldWorkWithPositiveNumber() {
+    @DisplayName("work with positive number")
+    void positiveNumberInput() {
         String actual = decimalToBinary.conversion(128);
         assertEquals("1000000000000000000000000", actual);
     }
 
     @Test
-    void shouldWorkWithNegativeNumber() {
-        String actual = Integer.toBinaryString(-128);
-        assertEquals("11111111111111111111111110000000", actual);
+    @DisplayName("work with negative number")
+    void negativeNumberInput() {
+        String actual = decimalToBinary.conversion(-128);
+        assertEquals("1111111111111111111111111", actual);
     }
 
     @Test
-    void shouldThrowNullException() {
+    @DisplayName("throw an exception if input is null")
+    void nullInput() {
         assertThrows(NullPointerException.class,
                 () -> decimalToBinary.conversion(null));
     }
 
     @Test
-    void shouldThrowNullException1() {
+    @DisplayName("throw an exception if input is zero")
+    void zeroInput() {
         assertThrows(ParamIsNullException.class,
                 () -> decimalToBinary.conversion(0));
     }
+
 }
