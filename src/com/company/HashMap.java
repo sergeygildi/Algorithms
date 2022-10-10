@@ -8,8 +8,8 @@ import java.util.Objects;
 /**
  * An implementation of the HashMap.
  *
- * @param <K> – the type of keys maintained by this map
- * @param <V> – the type of mapped values
+ * @param <K> the type of keys maintained by this map
+ * @param <V> the type of mapped values
  */
 public class HashMap<K, V> {
     private static final double DEFAULT_LOADER = 0.75;
@@ -95,7 +95,7 @@ public class HashMap<K, V> {
         private final V v;
         private Entry<K, V> next;
 
-        public Entry(K k, V v, Entry next) {
+        Entry(K k, V v, Entry next) {
             this.k = k;
             this.v = v;
             this.next = next;
@@ -114,12 +114,12 @@ public class HashMap<K, V> {
             if (this == o) return true;
             if (o == null || getClass() != o.getClass()) return false;
             Entry<?, ?> entry = (Entry<?, ?>) o;
-            return Objects.equals(k, entry.k) && Objects.equals(v, entry.v) && Objects.equals(next, entry.next);
+            return Objects.equals(k, entry.k);
         }
 
         @Override
         public int hashCode() {
-            return Objects.hash(k, v, next);
+            return Objects.hash(k);
         }
     }
 
